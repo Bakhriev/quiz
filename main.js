@@ -54,6 +54,9 @@ async function mask() {
 	await setTimeout(() => {
 		overlay.classList.remove("active")
 		current += 1
+		if (current === questions.length) {
+			document.querySelector(".congratulation").classList.add("active")
+		}
 		main()
 	}, 1000)
 }

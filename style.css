@@ -129,6 +129,26 @@ p {
   color: #fff;
 }
 
+.congratulation {
+  position: fixed;
+  display: grid;
+  place-content: center;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0;
+  color: gold;
+  font-size: 40px;
+}
+
+.congratulation.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .overlay {
   position: fixed;
   inset: 0;
