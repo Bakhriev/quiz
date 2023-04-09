@@ -62,14 +62,14 @@ button:focus-visible:active {
   gap: 30px;
 }
 
-.transcription {
+.transcription-text {
   position: relative;
   font-size: 20px;
   color: #aaede0;
 }
 
-.transcription::after,
-.transcription::before {
+.transcription-text::after,
+.transcription-text::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -79,11 +79,11 @@ button:focus-visible:active {
   background-color: #aaede0;
 }
 
-.transcription::after {
+.transcription-text::after {
   left: -10px;
 }
 
-.transcription::before {
+.transcription-text::before {
   right: -10px;
 }
 
